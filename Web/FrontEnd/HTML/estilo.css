@@ -1,0 +1,25 @@
+#titulo{
+    background-color: #1ca6f7;
+}
+
+p {
+    border-bottom: 0.3rem solid #009;
+    border-left: 0.3rem solid #009;
+    border-top: 0.3rem solid #009;
+    border-right: 0.3rem solid #009;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+div {
+    background-color: #ec10bd;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 0.03rem solid pink;
+}
+
+img {
+    border: 1.4rem solid blue;
+    border-radius: 500px;
+}
