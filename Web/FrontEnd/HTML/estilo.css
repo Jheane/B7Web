@@ -1,25 +1,26 @@
-#titulo{
-    background-color: #1ca6f7;
+body{
+    margin: 0px;
 }
 
-p {
-    border-bottom: 0.3rem solid #009;
-    border-left: 0.3rem solid #009;
-    border-top: 0.3rem solid #009;
-    border-right: 0.3rem solid #009;
-    padding: 0.5rem;
-    border-radius: 0.7rem;
+.exemplo {
+    /*border: 1px solid green;
+    margin: 10px;
+    padding: 10px;*/
+    /*margin e padding
+    o padding é o espaçamento interno do elemento, ou seja, o espaço dentro da borda entre o texto e a linha da caixa;
+    o margin é o espaço de margem do item, o espaço que está fora da caixa, por exemplo*/
+
+    /*Altura e largura*/
+    background-color: #000;
+    /*possibilidade de definição em px, %, rem, auto (expansão automática enquanto houver espaço para isso)*/
+    /*width: 100%;
+    height: 100px;*/
+    width:500px;
+    height:500px;
 }
 
-div {
-    background-color: #ec10bd;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 0.03rem solid pink;
-}
-
-img {
-    border: 1.4rem solid blue;
-    border-radius: 500px;
+img{
+    min-width: 500px;
+    width: 100px;
+    /*Entre o mínimo/máximo e altura/largura, o código vai sempre priorizar o tamanho mín.máx., e depois alt.larg.. Nesse caso da imagem, ele vai respeitar o min-width, invés do width declarado abaixo*/
 }
