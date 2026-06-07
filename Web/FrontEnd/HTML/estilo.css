@@ -1,26 +1,18 @@
+*{
+    box-sizing:border-box;
+    /*content-box: o conteúdo do elemento é o tamanho dele, sem considerar o padding e borda*/
+    /*border-box: o conteúdo inclui o padding e margem, sendo o 400px-os valores de padding e borda, não sendo apenas o conteúdo com 400px como na propriedade anterior*/
+}
+
 body{
     margin: 0px;
 }
-
+/*tanto o box-sizing:border-box em todos os elementos quanto o margin em 0px no body são quase que padrão na construção dos sites. Portanto, serão muito utilizados*/
 .exemplo {
-    /*border: 1px solid green;
-    margin: 10px;
-    padding: 10px;*/
-    /*margin e padding
-    o padding é o espaçamento interno do elemento, ou seja, o espaço dentro da borda entre o texto e a linha da caixa;
-    o margin é o espaço de margem do item, o espaço que está fora da caixa, por exemplo*/
-
-    /*Altura e largura*/
-    background-color: #000;
-    /*possibilidade de definição em px, %, rem, auto (expansão automática enquanto houver espaço para isso)*/
-    /*width: 100%;
-    height: 100px;*/
-    width:500px;
-    height:500px;
-}
-
-img{
-    min-width: 500px;
-    width: 100px;
-    /*Entre o mínimo/máximo e altura/largura, o código vai sempre priorizar o tamanho mín.máx., e depois alt.larg.. Nesse caso da imagem, ele vai respeitar o min-width, invés do width declarado abaixo*/
+    background-color: #0f0;
+    width:400px;
+    height:400px;
+    border:5px solid #000;
+    padding:10px;
+    margin:20px;
 }
