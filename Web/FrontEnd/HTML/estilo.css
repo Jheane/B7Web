@@ -1,18 +1,22 @@
 *{
     box-sizing:border-box;
-    /*content-box: o conteúdo do elemento é o tamanho dele, sem considerar o padding e borda*/
-    /*border-box: o conteúdo inclui o padding e margem, sendo o 400px-os valores de padding e borda, não sendo apenas o conteúdo com 400px como na propriedade anterior*/
 }
 
 body{
     margin: 0px;
 }
-/*tanto o box-sizing:border-box em todos os elementos quanto o margin em 0px no body são quase que padrão na construção dos sites. Portanto, serão muito utilizados*/
-.exemplo {
-    background-color: #0f0;
-    width:400px;
-    height:400px;
-    border:5px solid #000;
-    padding:10px;
-    margin:20px;
+
+.link{
+    color:green;
+    font-size:30px;
+}
+
+.link:hover{
+    /* estilos que serão aplicados unicamente quando o estado do elemento estiver ativo: mouse em cima do elemento*/
+    color: red;
+}
+
+.link:visited {
+    /*já acessado*/
+    color:pink;
 }
