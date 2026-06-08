@@ -9,41 +9,28 @@
   </head>
   <body>
     <h1>Página de teste</h1>
-    <p>
-      <!-- <ul style="list-style-type:circle;"> <!- - Troca os identificadores com CSS inline da lista não ordenada- ->
-        <li>Café</li>
-        <li>Chá</li>
-        <li>Água</li>
-        <li>Suco</li>
-      </ul> -->
-      <!-- <ol type="i"> <!- - Tipos de identificadores na lista ordenada: 1, a, A, i, I- ->
-        <li>Café</li>
-        <li>Chá</li>
-        <li>Água</li>
-        <li>Suco</li>
-      </ol> -->
-      <!-- <ol start="45"> <!- - Inicia a listagem em 45- ->
-        <li>Café</li>
-        <li>Chá</li>
-        <li>Água</li>
-        <li>Suco</li>
-      </ol> -->
-      <ul>
-        <li>Café</li>
-        <li><!-- Lista dentro de um item que já faz parte de uma lista-->
-          Chá
-          <ul>
-            <li>Chá verde</li>
-            <li>Chá preto
-              <ul>
-                <li>Tipo 1</li>
-                <li>Tipo 2</li>
-              </ul>
-            </li>
-            <li>Chá mate</li>
-          </ul>
-        </li>
-        <li>Leite</li>
-      </ul>
+    
+    <table width="200px" height="100px" border="1">
+      <thead><!-- Diz ao navegador que essa linha faz parte do cabeçalho da tabela, podendo repetir o cabeçalho em todas as páginas, em caso de tabelas grandes -->
+        <tr>
+          <th>Item 1</th>
+          <th>Item 2</th>
+        </tr>
+      </thead>
+      <tbody> <!-- Informa ao navegador que esse é o corpo da tabela -->
+        <tr>
+          <td>...</td>
+          <td>...</td>
+        </tr>      
+        <tr>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
