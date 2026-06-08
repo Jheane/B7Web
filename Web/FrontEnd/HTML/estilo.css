@@ -6,3 +6,31 @@ body{
     margin: 50px;
     font-size:17px; 
 }
+
+p{
+    color:#00f;
+    font-size: 20px;
+    /* Formatação de texto no CSS I
+    font-size: 30px;
+    font-weight: bold;*/
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-transform: uppercase; /*texto em maiúsculo*/
+    letter-spacing: 10px;/*espaço entre uma letra e outra*/
+    word-spacing: 70px; /*espaço entre umapalavra e outra*/
+    line-height: 30px; /*espaçamento entre linhas*/
+    text-shadow: 2px 1px 4px #000; /*deslocamento para: direita e baixo, respectivamente, intensidade do esfumado da sombra, e cor*/
+}
+/* Formatação de texto no CSS I
+a{
+    text-decoration: none;
+}
+
+a:houver{
+    text-decoration: underline;
+}
+
+a:visited{
+    color:#00f;
+    text-decoration: underline;
+}*/
