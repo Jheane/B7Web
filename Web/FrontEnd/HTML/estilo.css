@@ -3,20 +3,6 @@
 }
 
 body{
-    margin: 0px;
-}
-
-.link{
-    color:green;
-    font-size:30px;
-}
-
-.link:hover{
-    /* estilos que serão aplicados unicamente quando o estado do elemento estiver ativo: mouse em cima do elemento*/
-    color: red;
-}
-
-.link:visited {
-    /*já acessado*/
-    color:pink;
+    margin: 50px;
+    font-size:17px;
 }
