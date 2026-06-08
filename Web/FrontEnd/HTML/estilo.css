@@ -7,7 +7,7 @@ body{
     font-size:17px; 
 }
 
-p{
+ul, ol{
     color:#00f;
     font-size: 20px;
     font-family: "Playwrite AU VIC Guides", cursive;

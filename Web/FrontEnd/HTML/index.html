@@ -10,13 +10,40 @@
   <body>
     <h1>Página de teste</h1>
     <p>
-      <!-- Formatação de texto no CSS I
-      <a href="https://lipsum.com" target="_blank">Lorem</a>
-      -->
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda facilis, ex quisquam est earum harum! Voluptas esse iste suscipit voluptates deserunt, asperiores perferendis eum quaerat dolor amet id fuga.</p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi qui natus dicta voluptas? Illo ipsum vel repudiandae fuga odit eaque. Ducimus nulla enim beatae, corrupti quasi dolores pariatur eos!</p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus facilis saepe doloribus quas voluptas? Esse, laudantium unde veniam assumenda obcaecati vel in similique nulla dolor necessitatibus asperiores quaerat quas?</p>
+      <!-- <ul style="list-style-type:circle;"> <!- - Troca os identificadores com CSS inline da lista não ordenada- ->
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Água</li>
+        <li>Suco</li>
+      </ul> -->
+      <!-- <ol type="i"> <!- - Tipos de identificadores na lista ordenada: 1, a, A, i, I- ->
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Água</li>
+        <li>Suco</li>
+      </ol> -->
+      <!-- <ol start="45"> <!- - Inicia a listagem em 45- ->
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Água</li>
+        <li>Suco</li>
+      </ol> -->
+      <ul>
+        <li>Café</li>
+        <li><!-- Lista dentro de um item que já faz parte de uma lista-->
+          Chá
+          <ul>
+            <li>Chá verde</li>
+            <li>Chá preto
+              <ul>
+                <li>Tipo 1</li>
+                <li>Tipo 2</li>
+              </ul>
+            </li>
+            <li>Chá mate</li>
+          </ul>
+        </li>
+        <li>Leite</li>
+      </ul>
   </body>
 </html>
