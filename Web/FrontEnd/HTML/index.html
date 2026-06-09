@@ -9,52 +9,17 @@
   </head>
   <body>
     <h1>Página de teste</h1>
-    
-    <table border = 0>
-      <thead><!-- Diz ao navegador que essa linha faz parte do cabeçalho da tabela, podendo repetir o cabeçalho em todas as páginas, em caso de tabelas grandes -->
-        <tr>
-          <th>Item 1</th>
-          <th>Item 2</th>
-          <th>Item 3</th>
-        </tr>
-      </thead>
-      <tbody> <!-- Informa ao navegador que esse é o corpo da tabela -->
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>      
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-      </tbody>
-    </table>
+    <!--É interessante associar cada formulário em um determinado grupo, já que uma página pode conter ns formulários-->
+    <h2>Área de Cadastro</h2>
+    <form action="paginas/login.html" method="get">
+      <input type="text" name="usuario" value="123"/> <!-- Tag de entrada de dados: type="text": adiciona campo de texto; "password": senha; "checkbox": caixa de marcação; "radio" name="x": bolinha de seleção (o radio faz sentido quando é mais de uma opção, e, para marcar apenas uma opção, é necessário que o atributo name esteja definido como igual em todo o grupo do tipo radio); "submit": botão de envio de informações; "email": formata para e-mail, pedindo @ conforme construção de endereço -->
+      <!-- value: valor pré-preenchido na caixa de texto -->
+    </form><!-- Adição de ação dentro do form para redirecionar as informações, tendo os métodos GET e POST (GET: joga as informações dentro da URL do navegador; POST: as informações são enviadas de forma interna, não sendo mostradas na URL) --> 
+      <input type="submit" name="cadastro" value="Confirmar"><!-- o value no submit será mostrado dentro do botão-->
+    </form>
+    <h2>Área de Login</h2>
+    <form>
+
+    </form>
   </body>
 </html>
