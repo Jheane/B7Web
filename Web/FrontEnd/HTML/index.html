@@ -9,13 +9,34 @@
   </head>
   <body>
     <h1>Página de teste</h1>
-    <!--É interessante associar cada formulário em um determinado grupo, já que uma página pode conter ns formulários-->
-    <h2>Área de Cadastro</h2>
+     <h2>Área de Cadastro</h2>
     <form action="paginas/login.html" method="get">
-      <input type="text" name="usuario" value="123"/> <!-- Tag de entrada de dados: type="text": adiciona campo de texto; "password": senha; "checkbox": caixa de marcação; "radio" name="x": bolinha de seleção (o radio faz sentido quando é mais de uma opção, e, para marcar apenas uma opção, é necessário que o atributo name esteja definido como igual em todo o grupo do tipo radio); "submit": botão de envio de informações; "email": formata para e-mail, pedindo @ conforme construção de endereço -->
-      <!-- value: valor pré-preenchido na caixa de texto -->
-    </form><!-- Adição de ação dentro do form para redirecionar as informações, tendo os métodos GET e POST (GET: joga as informações dentro da URL do navegador; POST: as informações são enviadas de forma interna, não sendo mostradas na URL) --> 
-      <input type="submit" name="cadastro" value="Confirmar"><!-- o value no submit será mostrado dentro do botão-->
+      <!-- Types de inputs que são aceitos em navegadores que suportam HTML5 -->
+      <input type="email" name="usuario"/>  
+      <br/><br/>
+      <input type="color" name="usuario"/> 
+      <br/><br/>
+      <input type="date" name="usuario"/>
+      <br/><br/>
+      <input type="datetime-local" name="usuario"/>  
+      <br/><br/>
+      <input type="month" name="usuario"/>  
+      <br/><br/>
+      <input type="number" name="usuario"/>  
+      <br/><br/>
+      <input type="range" name="usuario"/>  
+      <br/><br/>
+      <input type="search" name="usuario"/>  
+      <br/><br/>
+      <input type="tell" name="usuario"/>  
+      <br/><br/>
+      <input type="time" name="usuario"/>  
+      <br/><br/>
+      <input type="url" name="usuario"/>  
+      <br/><br/>
+      <input type="week" name="usuario"/>  
+      <br/><br/>
+      <input type="submit" name="cadastro" value="Confirmar">
     </form>
     <h2>Área de Login</h2>
     <form>
