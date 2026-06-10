@@ -11,14 +11,32 @@
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
     <form action="Páginas/login.html" method="get">
-      <label for="nome">Digite o nome completo:</label><!-- O for + id no input faz com que, ao clicar no texto da label, o input seja selecionado -->
-      <input type="text" id="nome"/><!--Dessa forma, é necessário declarar o id e o for dentro da label para que funcione dessa maneira.-->
-      <br/><br/><br/>
+      <label>
+        Digite o nome completo:<br/>
+        <input type="text" name="nome"/>
+      </label>
+      
+      <label>
+        Descrição:<br/>
+        <textarea name="descricao"></textarea>
+      </label>
+      
+      <label>
+        Categoria:<br/>
+        <select name="categoria">
+          <option value="categoria1">Categoria 1</option>
+          <option value="categoria2">Categoria 2</option>
+          <option value="categoria3">Categoria 3</option>
+          <option value="categoria4">Categoria 4</option>
+          <option value="categoria5">Categoria 5</option>
+        </select>
+      </label>
+      
       <label>Leia o contrato e aceite os termos para continuar:
-        <br/><br/>
-        <input type="checkbox" name="aceito">Declaro que li e aceito os termos do contrato.
-      </label><!--Já dessa maneira, ao informar o input dentro da label, ele funciona da mesma forma que a supracitada, porém, sem necessidade de atribuição de id e uso do for, sendo um pouco mais organizada visualmente falando.-->
-      <br/><br/><br/>
+        <br/>
+        <input type="checkbox" name="aceito"> Declaro que li e aceito os <a href="Páginas/contrato.html" target="_blank" id="termoslink">termos do contrato</a>.
+      </label>
+      
       <input type="submit" value="Cadastrar" /> 
     </form>
     <h2>Área de Login</h2>
