@@ -10,3 +10,8 @@ body{
 h1{
     font-family: "Playwrite GB J", cursive;
 }
+
+textarea{ /*determinação de tamanho em largura e altura da minha caixa de texto*/
+    width: 400px;
+    height: 200px;
+}

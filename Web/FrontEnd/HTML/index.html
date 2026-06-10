@@ -11,14 +11,9 @@
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
     <form action="Páginas/login.html" method="get">
-      <select name="order" size="4" multiple><!-- Lista suspensa, necessita de identificação. size="4" multiple: permite a seleção de múltiplos valores, e size="4" permite que o número de opções visíveis seja ajustado -->
-        <option selected></option><!--selected permite que o valor seja selecionado por padrão -->
-        <option value="bestseller">mais vendidos</option>
-        <option value="last" >menos vendidos</option>
-        <option>preço crescente</option>
-        <option>preço decrescente</option>
-      </select>
-      <input type="submit" value="Cadastrar" />
+      <textarea name="descricao"></textarea>
+      <input type="submit" value="Cadastrar" /> <!-- Campo com múltiplas linhas, permitindo espaços, várias palavras e etc.
+      Antigamente, eram usados os atributos rows e cols, referentes a linhas e colunas. Atualmente, eles não são usados mais por problemas de fidedignidade dos navegadores, ou seja, cada navegador pode interpretar com tamanhos diferentes (Ópera determina que a linha tem tamanho x, Firefox diz que tem tamanho y, por exemplo), o que não causa acuracidade da informação -->
     </form>
     <h2>Área de Login</h2>
     <form>
