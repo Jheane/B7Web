@@ -10,33 +10,15 @@
   <body>
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
-    <form action="paginas/login.html" method="get">
-      <!-- Types de inputs que são aceitos em navegadores que suportam HTML5 -->
-      <input type="email" name="usuario"/>  
-      <br/><br/>
-      <input type="color" name="usuario"/> 
-      <br/><br/>
-      <input type="date" name="usuario"/>
-      <br/><br/>
-      <input type="datetime-local" name="usuario"/>  
-      <br/><br/>
-      <input type="month" name="usuario"/>  
-      <br/><br/>
-      <input type="number" name="usuario"/>  
-      <br/><br/>
-      <input type="range" name="usuario"/>  
-      <br/><br/>
-      <input type="search" name="usuario"/>  
-      <br/><br/>
-      <input type="tell" name="usuario"/>  
-      <br/><br/>
-      <input type="time" name="usuario"/>  
-      <br/><br/>
-      <input type="url" name="usuario"/>  
-      <br/><br/>
-      <input type="week" name="usuario"/>  
-      <br/><br/>
-      <input type="submit" name="cadastro" value="Confirmar">
+    <form action="Páginas/login.html" method="get">
+      <select name="order" size="4" multiple><!-- Lista suspensa, necessita de identificação. size="4" multiple: permite a seleção de múltiplos valores, e size="4" permite que o número de opções visíveis seja ajustado -->
+        <option selected></option><!--selected permite que o valor seja selecionado por padrão -->
+        <option value="bestseller">mais vendidos</option>
+        <option value="last" >menos vendidos</option>
+        <option>preço crescente</option>
+        <option>preço decrescente</option>
+      </select>
+      <input type="submit" value="Cadastrar" />
     </form>
     <h2>Área de Login</h2>
     <form>
