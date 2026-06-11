@@ -10,16 +10,13 @@
   <body>
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
-    <form method="get">
-      <!--As validações de campos podem ser via JS, ou pelo próprio campo, usando o atributo required-->
+    <form method="post" action="Páginas/login.html" enctype="multipart/form-data"> <!--POST é o método utilizado para envio de arquivos. O enctype informado ("multpart/form-data") vai converter o arquivo em bytes para receber no servidor, para ser carregado corretamente após o carregamento. Caso não seja usado o enctype correto, o servidor pode não receber o arquivo selecionado -->
       <input type="hidden" name="pais" value="JP"/>
-      <!--Geralmente, campos hidden ficam no começo do form, para não ficar bagunçado no meio do código. Esse tipo de campo costuma ser usado quando é uma informação necessária mas que não precisa ser mostrada para o usuário do site. ID de um registro, token de acesso, token de liberação... são ótimos exemplos de campos que devem ser tipo hidden-->
       <fieldset>
         <legend>Dados Pessoais</legend>
         <label>
           Nome: <br/>
           <input type="text" name="nome" required minlength="2" maxlength="30"/>
-          <!--O required não permite que o formulário seja enviado com o campo em branco. Já o minlength determina o tamanho mínimo do texto, que, nesse caso, são 2 caracteres. O maxlength determina o tamanho máximo do texto aceito, não permitindo que sejam digitados caracteres além do definido.-->
         </label>
         <br/>
         <label>
@@ -27,6 +24,10 @@
           <input type="text" name="sobrenome"/>
         </label>
         <br/>
+        <label>
+          Foto:<br/>
+          <input type="file" name="foto" accept="application/pdf"/><!--Tipo de entrada para seleção de arquivos. O accept informa quais tipos de arquivo eu posso subir naquele campo, onde posso usar como "image/*" para imagens, "application/pdf" para pdfs e mais. Esse tipo de atributo irá filtrar, ao abrir a caixa de seleção de arquivo, conforme o tipo atribuido dentro do windows. -->
+        </label>
       </fieldset>
 
       <fieldset>
