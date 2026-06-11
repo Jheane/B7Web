@@ -10,8 +10,10 @@
   <body>
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
-    <form method="post">
+    <form method="get">
       <!--As validações de campos podem ser via JS, ou pelo próprio campo, usando o atributo required-->
+      <input type="hidden" name="pais" value="JP"/>
+      <!--Geralmente, campos hidden ficam no começo do form, para não ficar bagunçado no meio do código. Esse tipo de campo costuma ser usado quando é uma informação necessária mas que não precisa ser mostrada para o usuário do site. ID de um registro, token de acesso, token de liberação... são ótimos exemplos de campos que devem ser tipo hidden-->
       <fieldset>
         <legend>Dados Pessoais</legend>
         <label>
@@ -25,20 +27,6 @@
           <input type="text" name="sobrenome"/>
         </label>
         <br/>
-        <label>
-          Idade: <br/>
-          <input type="number" name="age" min="0" max="150" step="2"><!--O step pula os valores conforme definido, nesse caso, pulando de 2 em 2 números - ele não permite inserir números que estão fora do determinado, ou seja, se eu colocar 1 manulamente, ele bloqueia o envio. O min e max determinam os valores mínimos e máximos aceitos pelo campo, bloqueando também caso sejam inseridos valores diferentes do intervalo especificado (<=/>=), funcionando tanto para números quanto para datas-->
-        </label>
-        <br/>
-        <label>
-          Data de nascimento: <br/>
-          <input type="date" name="nascimento" min="1910-01-01"><!--Quando definimos a data mínima, não conseguimos selecionar datas anteriores durante o preenchimento do formulário, o que fica interessante-->
-        </label>
-        <br/>
-        <label>
-          E-mail:<br/>
-          <input type="text" name="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail"><!--pattern: Permite a criação de padrão, oferecendo a expressão regular inserida nesse caso: ([tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - e/ou _]; tem que ter o @; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - ]; tem que ter o \ ou .; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., - ]; e padrão adicional, se for o caso) -->
-        </label>
       </fieldset>
 
       <fieldset>
