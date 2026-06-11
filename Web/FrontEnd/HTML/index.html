@@ -16,7 +16,7 @@
         <legend>Dados Pessoais</legend>
         <label>
           Nome: <br/>
-          <input type="text" name="nome" required minlength="2" maxlength="5"/>
+          <input type="text" name="nome" required minlength="2" maxlength="30"/>
           <!--O required não permite que o formulário seja enviado com o campo em branco. Já o minlength determina o tamanho mínimo do texto, que, nesse caso, são 2 caracteres. O maxlength determina o tamanho máximo do texto aceito, não permitindo que sejam digitados caracteres além do definido.-->
         </label>
         <br/>
@@ -37,7 +37,7 @@
         <br/>
         <label>
           E-mail:<br/>
-          <input type="text" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail"><!--Permite a criação de padrão, oferecendo a expressão regular inserida nesse caso: ([tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - e/ou _]; tem que ter o @; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - ]; tem que ter o \ ou .; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., - ]; e padrão adicional, se for o caso) -->
+          <input type="text" name="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail"><!--pattern: Permite a criação de padrão, oferecendo a expressão regular inserida nesse caso: ([tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - e/ou _]; tem que ter o @; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., +, - ]; tem que ter o \ ou .; [tem que ter de a a z, podendo ser ucase ou não, de 0 a 9, pode ter ., - ]; e padrão adicional, se for o caso) -->
         </label>
       </fieldset>
 
