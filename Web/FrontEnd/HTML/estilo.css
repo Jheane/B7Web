@@ -48,3 +48,11 @@ select{
 #termoslink:hover {
     text-decoration: underline;
 }
+
+input[type=submit]{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
