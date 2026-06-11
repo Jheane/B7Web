@@ -11,48 +11,15 @@ h1{
     font-family: "Playwrite GB J", cursive;
 }
 
-textarea{ /*determinação de tamanho em largura e altura da minha caixa de texto*/
-    width: 400px;
-    height: 200px;
-}
-
-label{
-    display:block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-input [type=text], textarea {/*determinação de tamanho em largura e altura das caixas de texto, quando o type for text*/
-    padding: 10px;/*não tem efeito no checkbox*/
-    width: 500px;   
-    font-size: 15px;
-    border: 1px solid #ccc;
-    outline:0; /*Remover borda azul na caixa de texto ao usar o form no Chrome, quando clica na caixa de texto*/
-}
-
-textarea{
-    height: 200px;
-    resize:none; /*impede que o usuário redimensione a caixa de texto*/
-}
-
-select{
-    padding: 2px;
-    width: 500px; 
-}
-
-#termoslink {
-    color: #7e0d0d;
-    text-decoration: none;
-}
-
-#termoslink:hover {
-    text-decoration: underline;
-}
-
-input[type=submit]{
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid #ccc;
+fieldset {
     background-color: #eee;
+    margin-bottom: 20px;
+    border: 2px solid #ff0505;
 }
 
+legend {
+    background-color: #ff0000;
+    color:#eee;
+    padding: 5px;
+
+}

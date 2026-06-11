@@ -10,36 +10,34 @@
   <body>
     <h1>Página de teste</h1>
      <h2>Área de Cadastro</h2>
-    <form action="Páginas/login.html" method="get">
-      <label>
-        Digite o nome completo:<br/>
-        <input type="text" name="nome"/>
-      </label>
-      
-      <label>
-        Descrição:<br/>
-        <textarea name="descricao"></textarea>
-      </label>
-      
-      <label>
-        Categoria:<br/>
-        <select name="categoria">
-          <option value="categoria1">Categoria 1</option>
-          <option value="categoria2">Categoria 2</option>
-          <option value="categoria3">Categoria 3</option>
-          <option value="categoria4">Categoria 4</option>
-          <option value="categoria5">Categoria 5</option>
-        </select>
-      </label>
-      
-      <label>Leia o contrato e aceite os termos para continuar:
+    <form method="post">
+      <fieldset><!-- Cria um conjunto, que é delimitado visualmente por um retângulo-->
+        <legend>Dados Pessoais</legend> <!-- Permite que coloquemos a legenda da fieldset, onde o texto será exibido entre a borda do retângulo da fieldset, estando em conjunto com ele -->
+        <label>
+          Nome: <br/>
+          <input type="text" name="nome"/>
+        </label>
         <br/>
-        <input type="checkbox" name="aceito"> Declaro que li e aceito os <a href="Páginas/contrato.html" target="_blank" id="termoslink">termos do contrato</a>.
-      </label>
-      
-      <input type="submit" value="Cadastrar" /> 
-    </form>
-    <h2>Área de Login</h2>
+        <label>
+          Sobrenome: <br/>
+          <input type="text" name="sobrenome"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>
+          Empresa: <br/>
+          <input type="text" name="empresa"/>
+        </label>
+        <br/>
+        <label>
+          Cargo: <br/>
+          <input type="text" name="cargo"/>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar"/>
     <form>
 
     </form>
