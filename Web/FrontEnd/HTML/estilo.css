@@ -1,14 +1,18 @@
+
 body{
-    margin: 0px;
+    margin: 0rem;
+    font-size: 10px;
 }
-.conteiner{
-    width:3cm;/*aqui, o texto foi quebrado no site porque é uma medida absoluta da propriedade, que não */
-    height: 300px;
-    background-color: #999;
+.box{
+    font-size: 16em;
 }
-/*unidade de medida absolutas:
-px: mais usado, universalmente falando
-pt: mais usado para fontes e sites que serão impressos, por ser similar ao tamanho do texto impresso na folha de papel e o monitor
-in: polegadas
-cm, mm: quase não utilizadas, mas o navegador consegue interpretar, também sendo mais usada em impressos, por dar mais certeza entre o tamanho do monitor com o tamanho do impresso.
-*/
+
+.boxInterno{
+    width: 10em;
+    height: 10em;/*a unidade em é baseada conforme o tamanho da fonte definida na div pai, ou seja, 1em = 1.25rem (que foi o tamanho definido na classe pai - anterior). Nesse caso, ao mexer na largura e altura da classe boxInterno, serão alterados os tamanhos da div e da fonte*/
+    background-color: #fae;
+    /*O em busca o item diretamente superior a ele*/
+    font-size:1rem;/*O rem pega a medida do elemento de hierarquia mais alta para efetuar o cálculo, ou seja, da tag html*/
+}
+/*O uso do rem é bom porque melhora em questão de responsividade do site, onde será feito o cálculo interno conforme o tamanho do dispositivo.
+Caso não seja especificado o tamanho do rem, ele equivale a 16px por padrão*/
