@@ -1,25 +1,17 @@
-*{
-    box-sizing:border-box;
-}
-
 body{
-    margin: 50px;
-    font-size:17px; 
+    margin: 0px;
+    color:blue;/*Aqui tudo o que está no body herda a cor azul, porém, o que está na classe conteiner não herda por estar com características especificadas*/
 }
 
-h1{
-    font-family: "Playwrite GB J", cursive;
+.conteiner{/*Tudo o que tiver na classe pai receberá as características do pai como herança (características que alteram o texto)*/
+    width: calc(100% - 20px);
+    height: 200px;
+    background-color: #ccc;
+    color: red;
+    font-size: 27px;
+    border: 1px solid burlywood;
 }
 
-fieldset {
-    background-color: #eee;
-    margin-bottom: 20px;
-    border: 2px solid #ff0505;
-}
-
-legend {
-    background-color: #ff0000;
-    color:#eee;
-    padding: 5px;
-
+.conteiner strong{/*Nesse caso, não são herdadas as características textuais, porque foi especificada uma característica diferente da classe pai. Vale lembrar que as bordas, margens, paddings não são herdadas por serem estruturas que não alteram o visual do texto, e sim outros elementos*/
+    color:black;
 }

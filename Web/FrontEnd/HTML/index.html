@@ -9,43 +9,8 @@
   </head>
   <body>
     <h1>Página de teste</h1>
-     <h2>Área de Cadastro</h2>
-    <form method="post" action="Páginas/login.html" enctype="multipart/form-data"> <!--POST é o método utilizado para envio de arquivos. O enctype informado ("multpart/form-data") vai converter o arquivo em bytes para receber no servidor, para ser carregado corretamente após o carregamento. Caso não seja usado o enctype correto, o servidor pode não receber o arquivo selecionado -->
-      <input type="hidden" name="pais" value="JP"/>
-      <fieldset>
-        <legend>Dados Pessoais</legend>
-        <label>
-          Nome: <br/>
-          <input type="text" name="nome" required minlength="2" maxlength="30"/>
-        </label>
-        <br/>
-        <label>
-          Sobrenome: <br/>
-          <input type="text" name="sobrenome"/>
-        </label>
-        <br/>
-        <label>
-          Foto:<br/>
-          <input type="file" name="foto" accept="application/pdf"/><!--Tipo de entrada para seleção de arquivos. O accept informa quais tipos de arquivo eu posso subir naquele campo, onde posso usar como "image/*" para imagens, "application/pdf" para pdfs e mais. Esse tipo de atributo irá filtrar, ao abrir a caixa de seleção de arquivo, conforme o tipo atribuido dentro do windows. -->
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Dados Profissionais</legend>
-        <label>
-          Empresa: <br/>
-          <input type="text" name="empresa"/>
-        </label>
-        <br/>
-        <label>
-          Cargo: <br/>
-          <input type="text" name="cargo"/>
-        </label>
-      </fieldset>
-
-      <input type="submit" value="Cadastrar"/>
-    <form>
-
-    </form>
+    <div class="conteiner">
+      Este é um <strong>texto</strong> qualquer.
+    </div>
   </body>
 </html>
