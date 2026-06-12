@@ -1,16 +1,6 @@
 body{
     margin: 0px;
 }
-
-.conteiner{/*a classe por si é específica, mas perde ao ser associada com o body*/
-    color: red;
+.conteiner{
+    color:red;
 }
-
-body .conteiner{/*o body junto com a classe é mais específico que apenas a classe, e por ser a última cor definida, ele será alterado para a cor especificada*/
-    color:blue;
-}
-
-div{/*a div é mais específica que a class, então a cor aplicada nela não será exibida no site*/
-    color:green;
-}
-/*A especificidade, quando ocorre em vários elementos que possuem o mesmo nível de hierarquia, irá aplicar a última regra disposta*/

@@ -6,15 +6,21 @@
     <link rel="stylesheet" href="estilo.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <!--Cascata-->
+    <style type="text/css">
+      .conteiner{
+        color:rgb(1, 158, 106);
+      }
+    </style>
   </head>
   <body>
-    <!--Especificidade-->
-    <h1>Página de teste</h1>
-    <div class="conteiner">
+    <h1>Título do site</h1>
+    <div class="conteiner" style="color:blueviolet;">
       Este é um <strong>texto</strong> qualquer.
     </div>
     <div>
-      Outro texto<!-- Esse texto ficará verde por não ser tão específico ao não ter uma classe definida -->
+      Outro texto
     </div>
   </body>
 </html>
+<!--O CSS é lido de cima pra baixo, tanto em questão de arquivos quanto no código. Ou seja, primeiro veio meu arquivo CSS dentro do head como arquivo externo, depois veio o style dentro do head, na própria página, e depois ele aplicou o CSS inline, dentro da minha própria div.-->
