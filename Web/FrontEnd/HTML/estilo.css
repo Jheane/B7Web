@@ -1,18 +1,21 @@
-
 body{
     margin: 0rem;
-    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .box{
-    font-size: 16em;
+    width:300px;/*Altura da fonte * 30 para definição do tamanho do elemento*/
+    background-color: #524f4f;
+    /* width:50%;/*Quando definimos o valor de 50% no body, ele pega 50% do tamanho disponível da tela
+    background-color: rgb(255, 0, 0); */
 }
 
 .boxInterno{
-    width: 10em;
-    height: 10em;/*a unidade em é baseada conforme o tamanho da fonte definida na div pai, ou seja, 1em = 1.25rem (que foi o tamanho definido na classe pai - anterior). Nesse caso, ao mexer na largura e altura da classe boxInterno, serão alterados os tamanhos da div e da fonte*/
-    background-color: #fae;
-    /*O em busca o item diretamente superior a ele*/
-    font-size:1rem;/*O rem pega a medida do elemento de hierarquia mais alta para efetuar o cálculo, ou seja, da tag html*/
+    /* width:50%;/*Aqui, ele pega 50% do valor disponivel dentro do body, ou seja, o tamanho da largura será a metade da metade do valor disponível da tela
+    background-color: blue; */
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    width: 7ch;
 }
-/*O uso do rem é bom porque melhora em questão de responsividade do site, onde será feito o cálculo interno conforme o tamanho do dispositivo.
-Caso não seja especificado o tamanho do rem, ele equivale a 16px por padrão*/
+/*Medidas em porcentagem são usadas mais para estruturas do site, não se aplicando comumente em tamanho de fonte.*/
+/*A medida ex é baseada no tipo de fonte que estamos usando (tamanho da altura da letra 'x' minúscula da fonte que estamos aplicando). Não é tão usada porque, pela variação de fonte, pode desconfigurar os sites*/
+/*Já a medida ch (unidade de caractere - character) é mais usada após o uso de boxes, onde é determinada pelo tamanho de um caractere. Comumente utilizada junto com uma fonte onde as letras possuem o mesmo tamanho (monospace), como a Courier New, por exemplo.*/
