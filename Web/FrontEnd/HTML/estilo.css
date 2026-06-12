@@ -2,5 +2,13 @@ body{
     margin: 0px;
 }
 .conteiner{
-    color:red;
+    width:3cm;/*aqui, o texto foi quebrado no site porque é uma medida absoluta da propriedade, que não */
+    height: 300px;
+    background-color: #999;
 }
+/*unidade de medida absolutas:
+px: mais usado, universalmente falando
+pt: mais usado para fontes e sites que serão impressos, por ser similar ao tamanho do texto impresso na folha de papel e o monitor
+in: polegadas
+cm, mm: quase não utilizadas, mas o navegador consegue interpretar, também sendo mais usada em impressos, por dar mais certeza entre o tamanho do monitor com o tamanho do impresso.
+*/
