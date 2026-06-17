@@ -1,21 +1,11 @@
 body{
-    margin: 0rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-.box{
-    width:300px;/*Altura da fonte * 30 para definição do tamanho do elemento*/
-    background-color: #524f4f;
-    /* width:50%;/*Quando definimos o valor de 50% no body, ele pega 50% do tamanho disponível da tela
-    background-color: rgb(255, 0, 0); */
+    margin: 0px;
 }
 
-.boxInterno{
-    /* width:50%;/*Aqui, ele pega 50% do valor disponivel dentro do body, ou seja, o tamanho da largura será a metade da metade do valor disponível da tela
-    background-color: blue; */
-    background-color: rgb(0, 0, 0);
-    color:#fff;
-    width: 7ch;
+.box{
+    background-color: #999;
+    /*height: 100vh; /*Unidade VH/VW: o número definido é em porcentagem, e ele será o valor disponível da altura/largura da tela do dispositivo (inteira, sendo diferente da porcentagem, que trabalha com a área disponível do elemento - não da tela). Usado quando temos menus laterais, modais, ou seções onde precisamos destacar aquela parte conforme visualização desejada.*/
+    /*width: 40vw;*/
+    height: 100vmin;/*vmin e vmax utilizam da medida mínima e máxima de um dispositivo, ou seja, o vmin, em smartphones, usa a largura, e, em monitores, a altura (no caso a largura é a menor medida, e ele aplica a porcentagem informada em cima disso). Não são utilizados com tanta frequência por não serem tão confiáveis, além de, no IE, ter outro nome, não sendo esses*/
+    width: 50vmin;
 }
-/*Medidas em porcentagem são usadas mais para estruturas do site, não se aplicando comumente em tamanho de fonte.*/
-/*A medida ex é baseada no tipo de fonte que estamos usando (tamanho da altura da letra 'x' minúscula da fonte que estamos aplicando). Não é tão usada porque, pela variação de fonte, pode desconfigurar os sites*/
-/*Já a medida ch (unidade de caractere - character) é mais usada após o uso de boxes, onde é determinada pelo tamanho de um caractere. Comumente utilizada junto com uma fonte onde as letras possuem o mesmo tamanho (monospace), como a Courier New, por exemplo.*/
