@@ -1,0 +1,2 @@
+Google Dev Tools: inspecionar no navegador Chrome
+Nessa ferramenta, usando a aba Console, podemos executar nosso código para entender o funcionamento do JS.
