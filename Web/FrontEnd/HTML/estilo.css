@@ -1,18 +1,9 @@
 body{
     margin: 0px;
-}
-
-.box{
-    font-size: 20px;
-    color:blue;
-}
-
-h1{
-    font-size: 30px;
-    color:rebeccapurple;
-}
-
-.box h1{
-    font-size: inherit;/*Força o h1 que está dentro do box a herdar o tamanho do font-size que está na box. */
-    color:inherit;/*Naturalmente, os elementos tendem a ser herdados, a não ser em casos onde existe uma definição geral para uma tag, e é necessária uma definição específica em uma tag dentro de outra. Essa condição de herança forçada serve para font-size, color, e demais propriedades relacionadas a texto (border e padding, por exemplo, não são herdados).*/
+    color: #0000ff;
+    background-color: beige;
+    /*As cores podem ser nominais (green, red, blue...), podem ser em hexadecimal (#000000, #ffffff, #ff0000...), e em rgb(rgb(0,30,254)). 
+    Há outra também que é pouco utilizada, chamada hsl (hue, saturation, lightness), onde essa é definida inserindo hsl(%,%,%). 
+    Também existe mais uma que é uma variável usada no CSS, que é pouco usada mas ainda é existente. Essa variável, invés de usarmos a cor novamente em um novo elemento, usamos o currentColor*/
+    border: 2px solid currentColor;
 }
