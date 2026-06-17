@@ -3,9 +3,16 @@ body{
 }
 
 .box{
-    background-color: #999;
-    /*height: 100vh; /*Unidade VH/VW: o número definido é em porcentagem, e ele será o valor disponível da altura/largura da tela do dispositivo (inteira, sendo diferente da porcentagem, que trabalha com a área disponível do elemento - não da tela). Usado quando temos menus laterais, modais, ou seções onde precisamos destacar aquela parte conforme visualização desejada.*/
-    /*width: 40vw;*/
-    height: 100vmin;/*vmin e vmax utilizam da medida mínima e máxima de um dispositivo, ou seja, o vmin, em smartphones, usa a largura, e, em monitores, a altura (no caso a largura é a menor medida, e ele aplica a porcentagem informada em cima disso). Não são utilizados com tanta frequência por não serem tão confiáveis, além de, no IE, ter outro nome, não sendo esses*/
-    width: 50vmin;
+    font-size: 20px;
+    color:blue;
+}
+
+h1{
+    font-size: 30px;
+    color:rebeccapurple;
+}
+
+.box h1{
+    font-size: inherit;/*Força o h1 que está dentro do box a herdar o tamanho do font-size que está na box. */
+    color:inherit;/*Naturalmente, os elementos tendem a ser herdados, a não ser em casos onde existe uma definição geral para uma tag, e é necessária uma definição específica em uma tag dentro de outra. Essa condição de herança forçada serve para font-size, color, e demais propriedades relacionadas a texto (border e padding, por exemplo, não são herdados).*/
 }
