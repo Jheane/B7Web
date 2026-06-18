@@ -1,6 +1,6 @@
-let carro = "Ferrari"
-console.log(carro)
-let valorBolo = 19.99
-console.log(valorBolo)
-let cidade = "São Paulo"
-console.log(cidade)
+let name = "Jheane"; //o ; é opcional
+let idade = 31;
+
+console.log(nome);
+console.log(idade);
+//o ; é obrigatório quando queremos colocar mais de um código na mesma linha 
