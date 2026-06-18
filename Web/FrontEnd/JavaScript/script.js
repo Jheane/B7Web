@@ -1,9 +1,7 @@
-alert("Olá mundo!") //Gera um popup na tela com a frase informada
-console.log("Olá mundo! Bão?")//Exibe essa informação dentro do console do navegador, não sendo exibida ao usuário
-let idade = 31 //cria a variável idade, recebendo 31 como valor
-let nome = "Jheane" //cria a variável nome recebendo o texto Jheane. Os textos devem ser inseridos entre aspas
-let cidade = "Betim"
-let estado = "Minas Gerais"
-console.log(nome, idade) //Mostra no console as variáveis
-console.log(cidade)
-console.log(estado)//dessa forma, cada informação será exibida em uma linha, diferente da anterior, que mostrou uma informação do lado da outra, na mesma linha
+let nome = "Jheane"//string
+let idade = 31//number (int, double)
+let logado = false //booleano
+let lista = ["ovo", "leite", "trigo", "chocolate"] //array, sendo possível buscar por informações através do índice do elemento
+let nomeCompleto = {nome: "Jheane", idade: 31} //objeto com duas informações, sendo possível filtrar pelo objeto através do nome da variável
+console.log(nomeCompleto)//printa o objeto, tendo as informações dele juntamente com o tipo de propriedade do objeto
+console.log(typeof lista)//o typeof mostra o tipo do dado armazenado naquela variável
