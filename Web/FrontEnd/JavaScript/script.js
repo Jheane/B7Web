@@ -1,10 +1,7 @@
-let x = 3//Declaração de variável tipo number, onde será possível executar operações matemáticas normalmente
-//let x = "0";//Aqui o x foi declarado como string, então, caso tente fazer alguma operação de adição, como exemplo abaixo, será feita a concatenação da variável com o 7, invés de somar
-x = x / 7;
-console.log(x);
-
-
 let nome = "Jheane";
-let sobrenome = "Silva";
-let nomeCompleto = nome + ' ' + sobrenome;
+let sobrenome = "Santos";
+let idade = 26;
+//let nomeCompleto = nome + ' ' + sobrenome; //forma que usamos anteriormente para concatenar as strings
+//let nomeCompleto = `Jheane Silva Santos`;//Template String: string entre `, onde podemos colocar conjunto de strings. Ele também permite expressões, sendo inseridas entre chaves e precedidas de $
+let nomeCompleto = `Nome: ${nome} ${sobrenome}, idade: ${idade + 5} anos`
 console.log(nomeCompleto);
