@@ -1,9 +1,17 @@
-let isMember = true;
-let age = 45;
+let profissao = "fiscal";
+switch(profissao){
+    case "fiscal": //primeira condição
+        console.log("Camisa verde");
+    break; //para a execução se essa condição for verdadeira
+    case "bombeiro": //próxima condição...
+        console.log("Camisa vermelha");
+    break;
+    case "policial":
+        console.log("Camisa azul");
+    break;
+    default: //condição padrão, será executada caso não entre nas condições anteriores
+        console.log("Camisa preta");
+        break; //finaliza a execução
+}
 
-let shipping = isMember ? 2 : 10;//shipping vai receber: isMember ? > if; 2 > condição se true; : > else; 10 > condição se false.
-let isAdult = (age >= 18 && age < 60) ? "Sim" : "Não"; 
-console.log(isMember ? "Você é membro" : "Você não é membro.")
-console.log("Valor do frete: R$ " + shipping);
-console.log(isAdult);
-//Condicional ternário: IF em uma linha só
+//Switch: condicional com múltiplos resultados
