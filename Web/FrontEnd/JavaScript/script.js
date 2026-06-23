@@ -1,26 +1,21 @@
-let idade = 45;
-if(idade >=60 && idade <= 120){
-    console.log("Você é um idoso");
-}
-else if(idade >= 18 && idade < 60){
-    console.log("Você é um adulto.");
-}
-else if(idade >= 0 && idade < 18){
-    console.log("Você é uma criança.");
-}
-
-else{
-    console.log("Digite uma idade válida.");
-}
-
-let sexo = "m";
-if(sexo == "M" || sexo == "m"){
-    console.log("Você é um homem.");
-}
-else if(sexo == "F" || sexo == "f"){
-    console.log("Você é uma mulher.")
+//Substitua o @ pela condicional correta para que o resultado seja TRUE
+let x = 10;
+let y = 5;
+console.log(x > y);
+//Substitua o @ pela condicional correta para que o resultado seja FALSE
+let w = "10";
+let z = 10;
+console.log(w === z);
+//Substitua o @ pela condicional correta para que o resultado seja TRUE
+let a = 10;
+let b = 5;
+console.log(a != b);
+//Crie uma condicional para verificar se o preço da carne está barato ou caro. PS.: até 45 está barato.
+let preco = 40.3;
+if(preco <= 45){
+    console.log("Tá barato");
 }
 else{
-    console.log("Você é de outro gênero.")
+    console.log("Tá caro.")
 }
-//Uso do && (E) e || (OU)
+//Exercício de fixação de condicionais
