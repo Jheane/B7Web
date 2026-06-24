@@ -1,17 +1,7 @@
-let profissao = "fiscal";
-switch(profissao){
-    case "fiscal": //primeira condição
-        console.log("Camisa verde");
-    break; //para a execução se essa condição for verdadeira
-    case "bombeiro": //próxima condição...
-        console.log("Camisa vermelha");
-    break;
-    case "policial":
-        console.log("Camisa azul");
-    break;
-    default: //condição padrão, será executada caso não entre nas condições anteriores
-        console.log("Camisa preta");
-        break; //finaliza a execução
+//Introdução, como declarar e como usar funções
+//Funções são escopos de código independentes, que irão exercer uma determinada atividade sem depender, exclusivamente, do código anterior. Só são executadas quando chamadas, não retornando nada caso ela não seja chamada.
+function gravidade() {
+    console.log("A gravidade do planeta é: ");
+    console.log(9.8);
 }
-
-//Switch: condicional com múltiplos resultados
+gravidade();//chama a função e a executa
