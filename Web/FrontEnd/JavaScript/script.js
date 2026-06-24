@@ -1,12 +1,8 @@
-//Função com retorno condicional
-function maiorDeIdade(idade){
-    if(idade>=18){
-        return true;
-    }
-    else{
-        return false;
-    }
+//Exercício de funções
+function calcPct(x, y){
+    return(y / x) * 100;
 }
-let idade = 17;
-let verificacao = maiorDeIdade(idade);
-console.log(verificacao ? "Maior de idade" : "Menor de idade");
+let x = 40;
+let y = 10;
+let pct = calcPct(x, y);
+console.log(`${pct}% de ${x} é ${y}`);
