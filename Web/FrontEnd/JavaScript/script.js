@@ -1,10 +1,16 @@
-//Operações básicas em arrays
-let ingredientes = ['água', 'farinha', 'açúcar', 'ovo', 'fermento'];
-ingredientes[5] = 'chocolate em pó';//adiciono o nome do array, o número do índice que será adicionado e o item que irá preencher aquele campo. Essa forma não deve ser muito utilizada, porque pode adicionar campos vazios caso informe o número do novo índice incorretamente. Pex.: minha lista tem 6 itens, de 0 a 5. Caso eu informe, sem querer, o índice 7 invés do 6 para adição de um novo item, ele irá criar esse item no índice 7 normalmente, porém, deixando o índice 6 vazio.
-ingredientes.push('essência de baunilha');//forma mais utilizada para adição de itens dentro de arrays
+//Exercício de array
+//1. No array abaixo, qual o número que pega a Ferrari?
+let carros = ['BMW', 'Ferrari', 'Mercedes'];
+let x = 1;//Com x = 1 e jogando ele na próxima linha, ele vai buscar o item de índice 1 no array
+console.log('1. ' + carros[x]);
+//2. Troque a Ferrari por Audi
+console.log(carros);
+carros[1] = 'Audi';
+console.log('2. Lista com Audi: ' + carros);
 
-ingredientes.pop();//remove o último item da lista, nesse caso, sem a essência de baunilha
+//3. Adicione Volvo à lista
+carros.push('Volvo');//add Volvo à lista
+console.log('3. Lista com Volvo: ' + carros);
 
-ingredientes.shift();//remove o primeiro item da lista, nesse caso, sem a água
-console.log(`Total de ingredientes: ${ingredientes.length}`);//o .length mostra a quantidade de itens no array
-console.log(ingredientes);
+//4. Exiba quantos itens tem no array
+console.log(`4. Itens no array: ${carros.length}`);
