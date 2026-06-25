@@ -1,9 +1,10 @@
-//variáveis dentro de funções
-function add(){
-    let count = 0;//variável local, tem preferência sobre a global, mesmo com o mesmo nome
-    count++;
+//funções dentro de funções
+function squares(a, b){
+    function square(x){
+        return x * x;    
+    }
+    let sqrA = square(a);//chamo a função anterior aqui
+    let sqrB = square(b);//e aqui
+    return sqrA + sqrB;//somo os returns das funções aqui
 }
-let count = 0;//variável global
-add();
-add();
-console.log(count);
+console.log(squares(2, 3));//e aqui retorna a soma das potências da função square
