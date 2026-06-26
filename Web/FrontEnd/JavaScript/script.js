@@ -1,31 +1,15 @@
-//Acessando e alterando objetos
-// let personagem = {
-//     nome: 'Jheane',
-//     idade: 31,
-//     pais: 'Brasil',
-//     caracteristicas: {
-//         forca: 150,
-//         magia: 220,
-//         stamina: 4
-//     },
-//      olhos: ['azul', 'verde']
-// }
-// console.log(personagem);
-// personagem.nome='Ana';
-// console.log(personagem.nome);
-// personagem.caracteristicas.forca = 40;
-// console.log(personagem.caracteristicas.forca);
-// personagem.caracteristicas.forca += 40;//adição de valor à força
-// personagem.olhos.push('castanho');//adição de cor ao array olhos
-// console.log(personagem.caracteristicas.forca);
-
-let personagem = {
-    nome: 'Matilda',
-    idade: 32,
-    carros: [
-        {modelo: 'Fiat', cor: 'azul'},
-        {modelo: 'Ferrari', cor: 'vermelho'}
-    ]
+//Função dentro de objeto
+let pessoa = {
+    nome: 'Jhe',
+    sobrenome: 'Sin',
+    idade: 20,
+    nomeCompleto: function(){
+        /*return this.nome + ' ' + this.sobrenome; //keyword que permite o acesso a uma chave dentro de um objeto na classe pai (pessoa)*/
+        return `${this.nome} ${this.sobrenome}`;//outra forma de concatenar o que quero e retornar na função
+    }
+    /*nomeCompleto: () => {
+        return `${this.nome} ${this.sobrenome}`;//Dessa forma, não será possível acessar propriedades do próprio objeto, por usarmos uma função anônima (já que não usamos a palavra function ao usarmos a arrow function)
+    }*/
 }
 
-console.log(personagem.carros[1].cor);//Acessar a cor que está no objeto carro, dentro do array carros, dentro do objeto personagem
+console.log(pessoa.nomeCompleto());//Chama a função dentro do objeto
