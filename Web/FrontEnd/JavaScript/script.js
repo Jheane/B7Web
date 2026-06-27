@@ -1,16 +1,15 @@
-//Exercício de loops
-// 1. Faça um loop que mostre todas as frutas
-let fruits = ['Maçã', 'Uva', 'Banana'];
-/*for (let i = 0; i < 3; i++){//forma como fiz
-    console.log(fruits[i]);
-}*/
-//Correção do professor
-for (let x in fruits) {
-    console.log(fruits[x]);
-}
-// 2. Conte de 1 a 100 através de um while
-let num = 1;
-while (num <= 100){
-    console.log(`número: ${num}`);
-    num++;
-}
+//Funções de array
+let fruits = ['Banana', 'maçã', 'morango', 'uva'];
+console.log(fruits);//info do array
+console.log(fruits.length);//tamanho do array
+fruits.push('kiwi');//add item no final do array
+console.log(fruits);
+fruits.pop();//remove último item do array
+console.log(fruits);
+fruits.shift();//remove primeiro item do array
+console.log(fruits);
+console.log(fruits.join(', '));//junta os itens do array com o que coloquei dentro de '', nesse caso, com espaço e vírgula. Ele não altera o array, ele junta e retorna uma string com o separador informado.
+console.log(fruits);
+fruits[1] = 'Abacate';//altera o índice 1, trocando a string atual pela nova informada
+fruits[fruits.length - 1] = 'goiaba';//troca o último índice do array
+console.log(fruits);
