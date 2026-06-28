@@ -1,15 +1,27 @@
-//Funções de array
-let fruits = ['Banana', 'maçã', 'morango', 'uva'];
-console.log(fruits);//info do array
-console.log(fruits.length);//tamanho do array
-fruits.push('kiwi');//add item no final do array
-console.log(fruits);
-fruits.pop();//remove último item do array
-console.log(fruits);
-fruits.shift();//remove primeiro item do array
-console.log(fruits);
-console.log(fruits.join(', '));//junta os itens do array com o que coloquei dentro de '', nesse caso, com espaço e vírgula. Ele não altera o array, ele junta e retorna uma string com o separador informado.
-console.log(fruits);
-fruits[1] = 'Abacate';//altera o índice 1, trocando a string atual pela nova informada
-fruits[fruits.length - 1] = 'goiaba';//troca o último índice do array
-console.log(fruits);
+//Ordenação de array
+// let fruits = ['maçã','banana','kiwi','uva'];
+// console.log(fruits);
+// fruits.sort();//ordena os itens do array de a para z, incluindo o index de cada elemento
+// console.log(fruits);
+// fruits.reverse();//ordena os itens do array de z para a
+// console.log(fruits);
+let cars = [
+    {brand: 'Fiat', year: 2022},
+    {brand: 'BMW', year: 2018},
+    {brand: 'Ferrari', year: 2020}
+];
+
+// cars.sort((a, b) => {
+//     // if(a.year > b.year){
+//     //     return 1;
+//     // } else if(a.year < b.year){
+//     //     return -1;
+//     // } else{
+//     //     return 0;
+//     // }//essa forma foi para entendermos a lógica da situação, podendo ser simplificado conforme linha abaixo
+//     return a.year - b.year;
+// });//Ou ainda podemos fazer de forma mais resumida:
+cars.sort((a, b) => a.year - b.year);
+console.log(cars);
+cars.sort((a, b) => b.year - a.year);//Inverto para ordenar do mais novo para o mais antigo
+console.log(cars);
