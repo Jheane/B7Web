@@ -1,9 +1,0 @@
-body{
-    margin: 0px;
-    color: #0000ff;
-    background-color: beige;
-    /*As cores podem ser nominais (green, red, blue...), podem ser em hexadecimal (#000000, #ffffff, #ff0000...), e em rgb(rgb(0,30,254)). 
-    Há outra também que é pouco utilizada, chamada hsl (hue, saturation, lightness), onde essa é definida inserindo hsl(%,%,%). 
-    Também existe mais uma que é uma variável usada no CSS, que é pouco usada mas ainda é existente. Essa variável, invés de usarmos a cor novamente em um novo elemento, usamos o currentColor*/
-    border: 2px solid currentColor;
-}
