@@ -1,22 +1,21 @@
-/*O que é DOM*/
+/*Eventos de clique*/
+//Nada mais é que o clique na página, sendo cada clique um evento. Um clique representa dois eventos, um de press down e outro press up: um é quando você clica no item, outro é quando solta o clique
+//Você cria um evento, e quando ele é acionado mecanicamente, algo é feito
+function clicou(){
+    console.log("Clicou no botão");//Ao clicar no botão, é retornada essa mensagem
+}
+/*Além da alternativa de colocar o onclick no html, conseguimos fazer da forma abaixo, que possui a mesma saída. Dessa forma, o onclick lá não é necessário*/
+//addEventListener : escutador de evento, que irá observar a ocorrência do evento, executando o que lhe foi proporcionado ao acontecer o evento
+let botao = document.querySelector('.botao');
+//botao.addEventListener("click", clicou);: temos essa opção e a de baixo, onde construímos uma função 
+botao.addEventListener("click", function(){//criamos a função function, que aciona a função clicou
+    clicou();
+});
 
-//DOM: Document Object Model: representação na memória do navegador da estrutura da página web
-//Organização de estrutura da página na memória, para entender como ela vai seguir. As tags dentro do HTML são elementos do DOM
+//e temos como fazer com arrow function:
+// botao.addEventListener("click", () => {
+//     clicou();
+// });
 
-/*Selecionando elementos 1*/
-//Consigo utilizar o JS para navegar nos elementos e alterar o DOM
-//Na página, há dois objetos que podem parecer parecidos, selecionando a janela: document e window. Window refere-se à janela completa do navegador, já o document refere-se ao conteúdo da página.
-// document.getElementsByTagName("h1") > faço a seleção de um elemento pelo nome da tag (nesse caso, h1). Ele entregará um array contendo os elementos encontrados, podendo eu atribuir essa array a uma variável com o código abaixo.
-//let elementos = document.getElementsByTagName("h1");
-//elementos[0] : aqui eu consigo consultar os elementos conforme seus índices
-
-/*Selecionando elementos 2*/
-//document.getElementsByTagName("div") : chamada de elementos das tags div
-//document.getElementById("teste") : chamada de elemento por id. Lembrando que APENAS um elemento pode ter um determinado ID, então o getElement aqui fica no singular
-//document.getElementsByClassName("botao") : chamada de elementos da tag com nome de classe botao
-//document.querySelector(".botao") : seleção como no CSS, onde estou buscando pelos elementos da classe botao
-//document.querySelector("#teste") : seleção do elemento de id teste
-//o query selector retorna de forma diferente do getElement, o query retorna como a tag descrita no meu HTML, já o getElement me retorna um array com os elementos, contendo o índice, tamanho e o tipo do protótipo
-//document.querySelectorAll("#teste ul li") : acesso os elementos dentro da tag de id teste, todos os li dentro dos ul
-//no querySelectorAll, os resultados retornados são como no getElement, em array. Além disso, o querySelectorAll retorna um Nodelist, enquanto o querySelector retorna apenas o primeiro elemento correspondente.
-//Mesmo o querySelector sendo mais fácil de fazer, é reocmendado o uso do getElementById, por ser mais rápido (já que é algo mais específico).
+//podemos fazer tudo em uma linha também:
+//document.querySelector('.botao').addEventListener("click", () => { clicou(); });
