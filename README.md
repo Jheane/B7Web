@@ -58,3 +58,10 @@ Aplicação para consulta da previsão do tempo utilizando a OpenWeather API.
 | JavaScript |   🔄   |
 | React      |    ⏳   |
 
+## Próximos passos
+
+- React
+- TypeScript
+- Node.js
+- APIs mais complexas
+
